@@ -17,7 +17,7 @@
 
 	<!-- 1. (a); 2. (b); 3. (a); 4. (c); 5. (a); 6. (b); 7. (d); 8. (c); 9. (c); 10. (b); 11. (c); 12. (c); 13. 
 				(d); 14. (b); 15. (a); 16. (b); 17. (c); 18. (c); 19. (d); 20. (a) -->
-<center class="center">
+<center>
     <div class="container-sm">
         
         <h1 class="results">Renewablle And Non-renewable Resources</h1>

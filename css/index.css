@@ -10,8 +10,10 @@ body
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    height: 150vh;      
+    height: 170vh;      
 }
+
+
 
 /* main container */
 .container
@@ -19,7 +21,7 @@ body
 	background-image: rgba(0,0,0,0.9);
 	border: thin solid;
 	border-radius: 30px;
-	height: 80%;
+	height: 100%;
 	width: 60%;
 }
 
@@ -32,6 +34,7 @@ body
 	width: auto;
 	padding: 20px;
 	overflow: scroll;
+	scroll-behavior: smooth;
 
 	/* add scroller here */
 }
@@ -64,7 +67,7 @@ body
         font-family: "Tahoma, san seriff";
         margin-top: 2%;
         margin-bottom: 2%;
-        font-size: 50px;
+        font-size: 35px;
 
     }
 
@@ -74,13 +77,13 @@ body
         color: white;
         font-weight: lighter;
         font-family: "Arial";
-        font-size: 30px;
+        font-size: 25px;
     }
 
      label
     {
         color: white;
-        font-size: 120%;
+        font-size: 110%;
         font-family: "Arial";
     }
 

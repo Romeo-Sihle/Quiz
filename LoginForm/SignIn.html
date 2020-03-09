@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+  </head>
+
+  <style>
+
+		body
+			{
+				background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url("images/Background1.jpg");
+				background-position: center;
+				background-repeat: no-repeat;
+				background-size: cover;
+				height: 100vh;
+			}
+
+			.container
+			{
+				height: 100%;
+				width: 100%;
+			}
+
+			.logo
+			{
+				margin-left: 20%;
+				margin-top: 5%;
+			}
+
+			.signin
+			{
+				margin-left: 30%;
+				transform: translateX(-50%) translateY(-50%);	
+				border: 1px solid rgba(225,225,225,3);
+				border-radius: 5px;
+				padding: 3em;			
+			}
+
+			h1
+			{
+				margin-top: 0px;
+				font-family: Source Sans Pro;
+				font-weight: lighter;
+				color: #fff;
+				font-size: 50px;
+				text-align: center;
+			}
+
+			input
+			{
+				display: block;
+				width: 320px;
+				height: 50px;
+				background: rgba(0,0,0,0.3);
+				outline: none;
+				border: 1px solid rgba(0,0,0,0.5);
+				font-family: Source Sans Pro;
+				font-weight: lighter;
+				font-size: 14px;
+				padding-left: 10px;
+				border-radius: 5px;
+				color: #fff;
+			}
+
+			button
+			{
+				width: 320px;
+				height: 50px;
+				font-size: 16px;
+				background: #000;
+				font-weight: lighter;
+				color: #fff;
+				border: 0px;
+				border-radius: 5px;
+			}
+
+			button:hover
+			{
+				cursor: pointer;
+				color: darkorange;
+			}
+
+			.wrong-input
+			{
+				border: 1px solid red;
+				animation: step-start 1000s;
+				animation-iteration-count: 2;
+			}
+
+			.error
+			{
+				color: #f33;
+				font-size: 12px;
+			}
+
+			.registerLink li a
+			{
+				color: #fff;
+				font-family: "Tahoma", sans-serif;
+				font-size: 15px;
+				margin-left: 50px;
+				text-align: center;
+			}
+
+
+			.registerLink li
+			{
+				display: inline-block;
+				margin-left: 2px;
+			}
+
+			.registerLink li a:hover
+			{
+				cursor: pointer;
+				background: #fff;
+				color: #333;
+			
+			}
+
+			@keyframes 
+			{
+				10% 90%
+				{
+					transform: translate3d(-1px, 0,0);
+				}
+			}	
+</style>
+
+<script type="text/javascript">
+			function validate()
+			{
+				var username = document.getElementById("username");
+				var password = document.getElementById("password");
+				var confirm_password = document.getElementById("confirm_password");
+				var valid = true;
+
+				if(username.value.length==0)
+				{
+					username.className="wrong-input";
+					username.nextElementSibling.innerHTML="Username cannot be blank!";
+					valid = false;
+				}
+
+				if(username.value.length<4)
+				{
+					username.className="wrong-input";
+					username.nextElementSibling.innerHTML="Username cannot be less than 4 characters!";
+					valid = false;
+				}
+
+				if(password.value.length<6)
+				{
+					password.className="wrong-input";
+					password.nextElementSibling.innerHTML="Password cannot be less than 6 characters!";
+					valid = false;
+				}
+
+				if(password.value!=confirm_password.value)
+				{
+					password.className = "wrong-input";
+					password.nextElementSibling.innerHTML="Passwords do not match!";
+					valid = false;
+				}
+				return valid;
+			}
+
+			function removemessage()
+			{
+				var errorinput = document.querySelectorAll(".error");
+				[].forEach.call(errorpara, function(el){
+					el.classList.remove("wrong-input");
+				});
+
+				var errorpara = document.querySelectorAll(".error");
+				[].forEach.call(errorpara, function(el){
+					el.innerHTML="";
+				});
+			}
+		</script>
+
+  <body>
+  	<div class="container">
+	    <center class="logo">
+		      <img src="images/logo.png" clas="logo" height="150" width="300">
+		</center>
+
+		<div class="signin">
+				<h1>Sign In</h1>
+				<form action="index.html" method="post" onsubmit="return validate()">
+					<input type="text" id="username" placeholder="Username">
+					<p class="error"></p>
+					<input type="password" id="password" placeholder="Password">
+					<p class="error"></p>
+					<input type="password" id="confirm_password" placeholder="Confirm Password">
+					<p class="error"></p>
+					<button type="submit">Sign In</button>
+					<ul class="registerLink">
+						<li><a href="Register.html">Click here to Register!</a></li>
+					</ul>
+				</form>
+			</div>
+		</div>
+
+	    <!-- Optional JavaScript -->
+	    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+	    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+	    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+	    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+  </body>
+</html>
