@@ -1,0 +1,101 @@
+*
+{
+	margin: 0;
+	padding: 0;
+}
+
+body
+{
+    background-image: linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.9)), url("../images/Background2.jpg");    
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 150vh;      
+}
+
+/* main container */
+.container
+{
+	background-image: rgba(0,0,0,0.9);
+	border: thin solid;
+	border-radius: 30px;
+	height: 80%;
+	width: 60%;
+}
+
+.containerForm
+{
+	border: 2px solid;
+	border-color: darkorange;
+	border-radius: 10px;
+	height: 620px;
+	width: auto;
+	padding: 20px;
+	overflow: scroll;
+
+	/* add scroller here */
+}
+
+/* .center
+{
+	border: thin solid;
+	border-color: blue;
+	border-radius: 10px;
+}*/
+
+    .form
+    {
+        border: solid 2px;
+        border-color: transparent;
+        color: white;
+        border-radius: 6px;
+        box-shadow: 3px;
+        background-color: darkorange;
+        width: auto;
+        background: rgba(0,0,0,0.3);
+
+    }
+
+   
+
+    h1
+    {
+    	color: darkorange;
+        font-family: "Tahoma, san seriff";
+        margin-top: 2%;
+        margin-bottom: 2%;
+        font-size: 50px;
+
+    }
+
+
+    h3
+    {
+        color: white;
+        font-weight: lighter;
+        font-family: "Arial";
+        font-size: 30px;
+    }
+
+     label
+    {
+        color: white;
+        font-size: 120%;
+        font-family: "Arial";
+    }
+
+.btn-submit
+{
+	border: thin solid;
+	border-color: blue;
+	border-radius: 5px;
+	padding: 10px;
+	color: white;
+	background-color: blue;
+}
+
+.btn-submit:hover
+{
+	background-color: #0000cc;
+	transition-delay: 0.2s;
+}
