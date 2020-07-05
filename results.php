@@ -282,7 +282,7 @@
                     echo "Your score is average, try harder!";
                 }
 
-                if($counter > 15)
+                if($counter >= 15)
                 {
                     echo "Well done, you passed!<br>";
 

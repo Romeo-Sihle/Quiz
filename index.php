@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
     <!-- css stylesheet link -->
     <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"> </script>
 </head>
 
 
@@ -20,7 +22,7 @@
 <center>
     <div class="container-sm">
         
-        <h1 class="results">Renewablle And Non-renewable Resources</h1>
+        <h1 class="results">Renewable And Non-renewable Resources</h1>
     	<?php 
 
         $Questions = array(
@@ -278,9 +280,9 @@
                 echo "Your score is average, try harder!";
             }
 
-            if($counter > 15)
+            if($counter >= 15)
             {
-                echo "Well done, you passed!";
+                echo "Well done, passed!";
             }
 
         } 
@@ -307,7 +309,7 @@
                             <?php } ?>
 
                         <?php } ?>
-                        <input type="submit" class="btn-submit" value="Submit Quiz" />
+                        <input type="submit" class="btn-submit" value="Submit Quiz" /> <!-- wow lightSpeedIn -->
                     </form>
                 </div>
             <?php 
@@ -318,16 +320,17 @@
 </center>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 <!-- *fix the total, 
         *add an if statement or an exception incase the user does not select an answer for a certain question,
-            *add javascript to show and hide the fims -->
-<!-- https://stackoverflow.com/questions/15482190/php-quiz-with-on-screen-results/15482950 -->
-<!-- https://css-tricks.com/building-a-simple-quiz/ -->
+-->
 </html>
 
 
