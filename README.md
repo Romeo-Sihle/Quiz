@@ -1,8 +1,3 @@
-# PHP_Quiz
-# PHP_Quiz
-# PHP_Quiz
-# PHP_Quiz
-# PHP_Quiz
-# Quiz
-# Quiz
-# Quiz
+#PHP Quiz
+
+Romeo Mnxulwa
